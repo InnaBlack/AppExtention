@@ -13,6 +13,9 @@
 		9DAA3DB625C8752800A27C3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAA3DB525C8752800A27C3A /* Preview Assets.xcassets */; };
 		9DAA3DC125C8752900A27C3A /* AppExtentionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA3DC025C8752900A27C3A /* AppExtentionTests.swift */; };
 		9DAA3DCC25C8752900A27C3A /* AppExtentionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA3DCB25C8752900A27C3A /* AppExtentionUITests.swift */; };
+		9DAA3DE325C8755A00A27C3A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA3DE225C8755A00A27C3A /* ShareViewController.swift */; };
+		9DAA3DE625C8755A00A27C3A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAA3DE425C8755A00A27C3A /* MainInterface.storyboard */; };
+		9DAA3DEA25C8755A00A27C3A /* WebTextShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DAA3DE025C8755A00A27C3A /* WebTextShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +33,28 @@
 			remoteGlobalIDString = 9DAA3DAA25C8752400A27C3A;
 			remoteInfo = AppExtention;
 		};
+		9DAA3DE825C8755A00A27C3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DAA3DA325C8752400A27C3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DAA3DDF25C8755A00A27C3A;
+			remoteInfo = WebTextShare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9DAA3DEE25C8755A00A27C3A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9DAA3DEA25C8755A00A27C3A /* WebTextShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9DAA3DAB25C8752400A27C3A /* AppExtention.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppExtention.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +69,12 @@
 		9DAA3DC725C8752900A27C3A /* AppExtentionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppExtentionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DAA3DCB25C8752900A27C3A /* AppExtentionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtentionUITests.swift; sourceTree = "<group>"; };
 		9DAA3DCD25C8752900A27C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DAA3DE025C8755A00A27C3A /* WebTextShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WebTextShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DAA3DE225C8755A00A27C3A /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		9DAA3DE525C8755A00A27C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9DAA3DE725C8755A00A27C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DAA3DF325C8A54900A27C3A /* AppExtention.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppExtention.entitlements; sourceTree = "<group>"; };
+		9DAA3DF825C8A55B00A27C3A /* WebTextShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebTextShare.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +99,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9DAA3DDD25C8755A00A27C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +115,7 @@
 				9DAA3DAD25C8752400A27C3A /* AppExtention */,
 				9DAA3DBF25C8752900A27C3A /* AppExtentionTests */,
 				9DAA3DCA25C8752900A27C3A /* AppExtentionUITests */,
+				9DAA3DE125C8755A00A27C3A /* WebTextShare */,
 				9DAA3DAC25C8752400A27C3A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +126,7 @@
 				9DAA3DAB25C8752400A27C3A /* AppExtention.app */,
 				9DAA3DBC25C8752900A27C3A /* AppExtentionTests.xctest */,
 				9DAA3DC725C8752900A27C3A /* AppExtentionUITests.xctest */,
+				9DAA3DE025C8755A00A27C3A /* WebTextShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +134,7 @@
 		9DAA3DAD25C8752400A27C3A /* AppExtention */ = {
 			isa = PBXGroup;
 			children = (
+				9DAA3DF325C8A54900A27C3A /* AppExtention.entitlements */,
 				9DAA3DAE25C8752400A27C3A /* AppExtentionApp.swift */,
 				9DAA3DB025C8752400A27C3A /* ContentView.swift */,
 				9DAA3DB225C8752800A27C3A /* Assets.xcassets */,
@@ -130,6 +170,17 @@
 			path = AppExtentionUITests;
 			sourceTree = "<group>";
 		};
+		9DAA3DE125C8755A00A27C3A /* WebTextShare */ = {
+			isa = PBXGroup;
+			children = (
+				9DAA3DF825C8A55B00A27C3A /* WebTextShare.entitlements */,
+				9DAA3DE225C8755A00A27C3A /* ShareViewController.swift */,
+				9DAA3DE425C8755A00A27C3A /* MainInterface.storyboard */,
+				9DAA3DE725C8755A00A27C3A /* Info.plist */,
+			);
+			path = WebTextShare;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,10 +191,12 @@
 				9DAA3DA725C8752400A27C3A /* Sources */,
 				9DAA3DA825C8752400A27C3A /* Frameworks */,
 				9DAA3DA925C8752400A27C3A /* Resources */,
+				9DAA3DEE25C8755A00A27C3A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9DAA3DE925C8755A00A27C3A /* PBXTargetDependency */,
 			);
 			name = AppExtention;
 			productName = AppExtention;
@@ -186,6 +239,23 @@
 			productReference = 9DAA3DC725C8752900A27C3A /* AppExtentionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9DAA3DDF25C8755A00A27C3A /* WebTextShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DAA3DEB25C8755A00A27C3A /* Build configuration list for PBXNativeTarget "WebTextShare" */;
+			buildPhases = (
+				9DAA3DDC25C8755A00A27C3A /* Sources */,
+				9DAA3DDD25C8755A00A27C3A /* Frameworks */,
+				9DAA3DDE25C8755A00A27C3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebTextShare;
+			productName = WebTextShare;
+			productReference = 9DAA3DE025C8755A00A27C3A /* WebTextShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +276,9 @@
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 9DAA3DAA25C8752400A27C3A;
 					};
+					9DAA3DDF25C8755A00A27C3A = {
+						CreatedOnToolsVersion = 12.2;
+					};
 				};
 			};
 			buildConfigurationList = 9DAA3DA625C8752400A27C3A /* Build configuration list for PBXProject "AppExtention" */;
@@ -224,6 +297,7 @@
 				9DAA3DAA25C8752400A27C3A /* AppExtention */,
 				9DAA3DBB25C8752900A27C3A /* AppExtentionTests */,
 				9DAA3DC625C8752900A27C3A /* AppExtentionUITests */,
+				9DAA3DDF25C8755A00A27C3A /* WebTextShare */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +323,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DAA3DDE25C8755A00A27C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DAA3DE625C8755A00A27C3A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +362,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9DAA3DDC25C8755A00A27C3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DAA3DE325C8755A00A27C3A /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,7 +383,23 @@
 			target = 9DAA3DAA25C8752400A27C3A /* AppExtention */;
 			targetProxy = 9DAA3DC825C8752900A27C3A /* PBXContainerItemProxy */;
 		};
+		9DAA3DE925C8755A00A27C3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DAA3DDF25C8755A00A27C3A /* WebTextShare */;
+			targetProxy = 9DAA3DE825C8755A00A27C3A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DAA3DE425C8755A00A27C3A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DAA3DE525C8755A00A27C3A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9DAA3DCE25C8752900A27C3A /* Debug */ = {
@@ -415,8 +521,10 @@
 		9DAA3DD125C8752900A27C3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppExtention/AppExtention.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AppExtention/Preview Content\"";
 				DEVELOPMENT_TEAM = YA7JSM4L93;
@@ -437,8 +545,10 @@
 		9DAA3DD225C8752900A27C3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppExtention/AppExtention.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AppExtention/Preview Content\"";
 				DEVELOPMENT_TEAM = YA7JSM4L93;
@@ -540,6 +650,46 @@
 			};
 			name = Release;
 		};
+		9DAA3DEC25C8755A00A27C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WebTextShare/WebTextShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA7JSM4L93;
+				INFOPLIST_FILE = WebTextShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.inna.AppExtention.WebTextShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DAA3DED25C8755A00A27C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WebTextShare/WebTextShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA7JSM4L93;
+				INFOPLIST_FILE = WebTextShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.inna.AppExtention.WebTextShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +725,15 @@
 			buildConfigurations = (
 				9DAA3DD725C8752900A27C3A /* Debug */,
 				9DAA3DD825C8752900A27C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DAA3DEB25C8755A00A27C3A /* Build configuration list for PBXNativeTarget "WebTextShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAA3DEC25C8755A00A27C3A /* Debug */,
+				9DAA3DED25C8755A00A27C3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
