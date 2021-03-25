@@ -91,8 +91,7 @@ class ShareViewController: SLComposeServiceViewController, UITableViewDelegate, 
         let segment = UISegmentedControl(items: ["ASC","DESC","3", "5"])
         segment.addTarget(self, action: #selector(ShareViewController.segmentChanged(_:)), for: .allEvents)
         let viewMain: UIStackView = .init()
-        
-        self.tableView = UITableView()
+       
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         self.tableView.delegate = self
         self.tableView.dataSource = self
