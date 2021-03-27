@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D504C33260FCD3F000BBC9F /* DFetcher in Frameworks */ = {isa = PBXBuildFile; productRef = 9D504C32260FCD3F000BBC9F /* DFetcher */; };
+		9D504C35260FCD3F000BBC9F /* UIFetchComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9D504C34260FCD3F000BBC9F /* UIFetchComponents */; };
 		9DAA3DAF25C8752400A27C3A /* AppExtentionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA3DAE25C8752400A27C3A /* AppExtentionApp.swift */; };
 		9DAA3DB125C8752400A27C3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA3DB025C8752400A27C3A /* ContentView.swift */; };
 		9DAA3DB325C8752800A27C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAA3DB225C8752800A27C3A /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D504C23260FCA62000BBC9F /* DFetcher */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DFetcher; sourceTree = "<group>"; };
+		9D504C28260FCA91000BBC9F /* UIFetchComponents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIFetchComponents; sourceTree = "<group>"; };
 		9DAA3DAB25C8752400A27C3A /* AppExtention.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppExtention.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DAA3DAE25C8752400A27C3A /* AppExtentionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtentionApp.swift; sourceTree = "<group>"; };
 		9DAA3DB025C8752400A27C3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D504C33260FCD3F000BBC9F /* DFetcher in Frameworks */,
+				9D504C35260FCD3F000BBC9F /* UIFetchComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,14 +115,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D504C1D260FC9C2000BBC9F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9D504C28260FCA91000BBC9F /* UIFetchComponents */,
+				9D504C23260FCA62000BBC9F /* DFetcher */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9D504C31260FCD3F000BBC9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9DAA3DA225C8752400A27C3A = {
 			isa = PBXGroup;
 			children = (
+				9D504C1D260FC9C2000BBC9F /* Modules */,
 				9DAA3DAD25C8752400A27C3A /* AppExtention */,
 				9DAA3DBF25C8752900A27C3A /* AppExtentionTests */,
 				9DAA3DCA25C8752900A27C3A /* AppExtentionUITests */,
 				9DAA3DE125C8755A00A27C3A /* WebTextShare */,
 				9DAA3DAC25C8752400A27C3A /* Products */,
+				9D504C31260FCD3F000BBC9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,6 +223,10 @@
 				9DAA3DE925C8755A00A27C3A /* PBXTargetDependency */,
 			);
 			name = AppExtention;
+			packageProductDependencies = (
+				9D504C32260FCD3F000BBC9F /* DFetcher */,
+				9D504C34260FCD3F000BBC9F /* UIFetchComponents */,
+			);
 			productName = AppExtention;
 			productReference = 9DAA3DAB25C8752400A27C3A /* AppExtention.app */;
 			productType = "com.apple.product-type.application";
@@ -739,6 +767,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D504C32260FCD3F000BBC9F /* DFetcher */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DFetcher;
+		};
+		9D504C34260FCD3F000BBC9F /* UIFetchComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIFetchComponents;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9DAA3DA325C8752400A27C3A /* Project object */;
 }

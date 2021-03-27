@@ -15,9 +15,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "isContentValid()"
-            landmarkType = "7">
+            endingLineNumber = "110">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -31,9 +29,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
+            endingLineNumber = "128">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -47,9 +43,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "get_3_letter()"
-            landmarkType = "7">
+            endingLineNumber = "58">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -63,9 +57,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "get_5_letter()"
-            landmarkType = "7">
+            endingLineNumber = "65">
             <Locations>
                <Location
                   uuid = "2C00BF70-8B53-4970-A0CB-234E4333742B - 4c73dc004daa0b37"
@@ -111,9 +103,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "isContentValid()"
-            landmarkType = "7">
+            endingLineNumber = "105">
             <Locations>
                <Location
                   uuid = "280D4569-CDB0-45C9-B371-DCF94E9BA52B - 38a9f17d3d284138"
@@ -159,9 +149,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "segmentChanged(_:)"
-            landmarkType = "7">
+            endingLineNumber = "148">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
