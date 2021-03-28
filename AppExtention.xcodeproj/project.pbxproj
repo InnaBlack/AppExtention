@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9D504C33260FCD3F000BBC9F /* DFetcher in Frameworks */ = {isa = PBXBuildFile; productRef = 9D504C32260FCD3F000BBC9F /* DFetcher */; };
 		9D504C35260FCD3F000BBC9F /* UIFetchComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9D504C34260FCD3F000BBC9F /* UIFetchComponents */; };
+		9D504C3F2610B432000BBC9F /* DFetcher in Frameworks */ = {isa = PBXBuildFile; productRef = 9D504C3E2610B432000BBC9F /* DFetcher */; };
 		9DAA3DAF25C8752400A27C3A /* AppExtentionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA3DAE25C8752400A27C3A /* AppExtentionApp.swift */; };
 		9DAA3DB125C8752400A27C3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA3DB025C8752400A27C3A /* ContentView.swift */; };
 		9DAA3DB325C8752800A27C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAA3DB225C8752800A27C3A /* Assets.xcassets */; };
@@ -109,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D504C3F2610B432000BBC9F /* DFetcher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +282,9 @@
 			dependencies = (
 			);
 			name = WebTextShare;
+			packageProductDependencies = (
+				9D504C3E2610B432000BBC9F /* DFetcher */,
+			);
 			productName = WebTextShare;
 			productReference = 9DAA3DE025C8755A00A27C3A /* WebTextShare.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -776,6 +781,10 @@
 		9D504C34260FCD3F000BBC9F /* UIFetchComponents */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UIFetchComponents;
+		};
+		9D504C3E2610B432000BBC9F /* DFetcher */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DFetcher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

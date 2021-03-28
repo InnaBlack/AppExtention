@@ -7,27 +7,30 @@
 
 import UIKit
 import Social
+import DFetcher
 
 
 class ShareViewController: SLComposeServiceViewController {
     
-    
-    var tableView: UITableView = .init()
-    
     static let sheredIdentifier: String =  "group.test.inna.AppExtention"
     
     override func isContentValid() -> Bool {
-        // Do validation of contentText and/or NSExtensionContext attachments here
-        if let cText = contentText {
-            UserDefaults(suiteName: ShareViewController.sheredIdentifier)?.set(cText, forKey: "first")
-        }
-    
+
+
+            if let cText = self.contentText {
+                UserDefaults(suiteName: ShareViewController.sheredIdentifier)?.set(cText, forKey: "first")
+            }
+       
         return true
     }
     
     override func didSelectPost() {
                 
-        self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
+            let urlString = "openFromExtention://"
+            if let url = URL(string: urlString)
+            {
+                self.extensionContext!.open(url, completionHandler: {success in print("called url complete handler: \(success)")})
+            }
     }
     
     override func configurationItems() -> [Any]! {

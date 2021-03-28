@@ -16,6 +16,7 @@ final class TwoColumnScreenViewModel: ObservableObject {
     
     init() {
         fetchedData()
+        
     }
     
     func fetchedData() {
