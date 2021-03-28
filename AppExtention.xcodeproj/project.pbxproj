@@ -10,6 +10,8 @@
 		9D504C33260FCD3F000BBC9F /* DFetcher in Frameworks */ = {isa = PBXBuildFile; productRef = 9D504C32260FCD3F000BBC9F /* DFetcher */; };
 		9D504C35260FCD3F000BBC9F /* UIFetchComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9D504C34260FCD3F000BBC9F /* UIFetchComponents */; };
 		9D504C3F2610B432000BBC9F /* DFetcher in Frameworks */ = {isa = PBXBuildFile; productRef = 9D504C3E2610B432000BBC9F /* DFetcher */; };
+		9D504C5226113270000BBC9F /* DFetcher in Frameworks */ = {isa = PBXBuildFile; productRef = 9D504C5126113270000BBC9F /* DFetcher */; };
+		9D504C592611328C000BBC9F /* UIFetchComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9D504C582611328C000BBC9F /* UIFetchComponents */; };
 		9DAA3DAF25C8752400A27C3A /* AppExtentionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA3DAE25C8752400A27C3A /* AppExtentionApp.swift */; };
 		9DAA3DB125C8752400A27C3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA3DB025C8752400A27C3A /* ContentView.swift */; };
 		9DAA3DB325C8752800A27C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAA3DB225C8752800A27C3A /* Assets.xcassets */; };
@@ -89,6 +91,8 @@
 			files = (
 				9D504C33260FCD3F000BBC9F /* DFetcher in Frameworks */,
 				9D504C35260FCD3F000BBC9F /* UIFetchComponents in Frameworks */,
+				9D504C5226113270000BBC9F /* DFetcher in Frameworks */,
+				9D504C592611328C000BBC9F /* UIFetchComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +232,8 @@
 			packageProductDependencies = (
 				9D504C32260FCD3F000BBC9F /* DFetcher */,
 				9D504C34260FCD3F000BBC9F /* UIFetchComponents */,
+				9D504C5126113270000BBC9F /* DFetcher */,
+				9D504C582611328C000BBC9F /* UIFetchComponents */,
 			);
 			productName = AppExtention;
 			productReference = 9DAA3DAB25C8752400A27C3A /* AppExtention.app */;
@@ -323,6 +329,10 @@
 				Base,
 			);
 			mainGroup = 9DAA3DA225C8752400A27C3A;
+			packageReferences = (
+				9D504C5026113270000BBC9F /* XCRemoteSwiftPackageReference "DFetcher" */,
+				9D504C572611328C000BBC9F /* XCRemoteSwiftPackageReference "UIFetchComponents" */,
+			);
 			productRefGroup = 9DAA3DAC25C8752400A27C3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -773,6 +783,25 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		9D504C5026113270000BBC9F /* XCRemoteSwiftPackageReference "DFetcher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/InnaBlack/DFetcher.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		9D504C572611328C000BBC9F /* XCRemoteSwiftPackageReference "UIFetchComponents" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/InnaBlack/UIFetchComponents.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		9D504C32260FCD3F000BBC9F /* DFetcher */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -785,6 +814,16 @@
 		9D504C3E2610B432000BBC9F /* DFetcher */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DFetcher;
+		};
+		9D504C5126113270000BBC9F /* DFetcher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D504C5026113270000BBC9F /* XCRemoteSwiftPackageReference "DFetcher" */;
+			productName = DFetcher;
+		};
+		9D504C582611328C000BBC9F /* UIFetchComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D504C572611328C000BBC9F /* XCRemoteSwiftPackageReference "UIFetchComponents" */;
+			productName = UIFetchComponents;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
